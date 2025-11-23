@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "disableesc",
+  "version": "${version}",
+  "name": "Disable ESC Mod",
+  "description": "Blocks the ESC key from opening the game menu, preventing accidental pauses or disconnection.",
+  "authors": [
+    "YourName"
+  ],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/VivaPedroSanchez/disable-esc-mod"
+  },
+  "license": "CC0-1.0",
+  "icon": "assets/disableesc/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "com.disableesc.DisableEscMod"
+    ]
+  },
+  "mixins": [
+    "disableesc.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.15.0",
+    "minecraft": "1.21.1",
+    "java": ">=17",
+    "fabric-api": "*"
+  }
+}
