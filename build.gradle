@@ -1,0 +1,26 @@
+plugins {
+    id 'fabric-loom' version '1.5-SNAPSHOT'
+    id 'java'
+}
+
+group = 'com.disableesc'
+version = '1.0.0'
+archivesBaseName = 'disable-esc-mod'
+sourceCompatibility = '17'
+targetCompatibility = '17'
+
+repositories {
+    mavenCentral();
+    maven { url = 'https://maven.fabricmc.net/' }
+}
+
+dependencies {
+    minecraft 'com.mojang:minecraft:1.21.1'
+    mappings 'net.fabricmc:yarn:1.21.1+build.2:v2'
+    modImplementation 'net.fabricmc:fabric-loader:0.15.0'
+    modImplementation 'net.fabricmc.fabric-api:fabric-api:1.81.0+1.21.1'
+}
+
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8'
+}
